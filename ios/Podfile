@@ -1,0 +1,42 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '13.4'
+project 'butler.xcodeproj'
+prepare_react_native_project!
+
+target 'Butler' do
+  config = use_native_modules!
+  use_frameworks! :linkage => :static
+  $RNFirebaseAsStaticFramework = true
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # Hermes is now enabled by default
+    :hermes_enabled => true,
+    :fabric_enabled => false
+  )
+
+  pod 'FirebaseCore', :modular_headers => true
+
+  target 'ButlerTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  pod 'Firebase', :modular_headers => true
+  pod 'FirebaseCoreInternal', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+  pod 'Firebase/Messaging', :modular_headers => true
+  pod 'TOCropViewController', '2.6.1'
+
+  post_install do |installer|
+    # https://github.com/facebook/react-native/blob/main/releases/next.json#L2
+    react_native_post_install(
+      installer,
+      # Set `mac_catalyst_enabled` to `true` in order to expose React Native
+      # APIs on macOS.
+      :mac_catalyst_enabled => false
+    )
+  end
+end

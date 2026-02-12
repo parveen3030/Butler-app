@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "579456489434",
+    "project_id": "butler-app-e395f",
+    "storage_bucket": "butler-app-e395f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579456489434:android:72ce9968f0521b5b57d2e3",
+        "android_client_info": {
+          "package_name": "com.butler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579456489434-8c1ipd5m6925if8t0mq7kdgr6k3mimcs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhzoLUpRMu5MNAc8Ei81A_Qca8ZYrwn7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579456489434-8c1ipd5m6925if8t0mq7kdgr6k3mimcs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579456489434:android:90df545dd934776957d2e3",
+        "android_client_info": {
+          "package_name": "com.butlergraphics.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579456489434-8c1ipd5m6925if8t0mq7kdgr6k3mimcs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhzoLUpRMu5MNAc8Ei81A_Qca8ZYrwn7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579456489434-8c1ipd5m6925if8t0mq7kdgr6k3mimcs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
